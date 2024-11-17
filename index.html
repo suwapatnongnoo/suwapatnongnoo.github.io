@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lilita+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Kanit&family=Lilita+One&family=Righteous&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <style>
+        .item-H {
+            grid-area: header;
+            height: 200px;
+            position: sticky;
+
+        }
+
+        .item-L {
+            grid-area: lside;
+            height: 510px;
+            text-align: left;
+        }
+
+        .item-M {
+            grid-area: main;
+            height: 510px;
+            overflow: auto;
+        }
+
+        .item-F {
+            grid-area: footer;
+            height: 110px;
+
+        }
+
+        .gridcontainer {
+            display: grid;
+            grid-template-areas:
+                'header header header header header'
+                'lside main main main main'
+                'footer footer footer footer footer';
+            background-color: rgb(233, 255, 209);
+            grid-gap: 1px;
+            padding: 7px;
+        }
+
+        .item {
+            background-color: lightcyan;
+            border: 1.27px solid forestgreen;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+        .item-F {
+            width: 100%;
+            background-color: #20a24c;
+            border: 1.27px solid #3e58d9;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            background-color: rgb(255, 196, 196);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px rgb(207, 207, 207);
+            cursor: pointer;
+        }
+
+        .product_item {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid salmon;
+            box-sizing: border-box;
+            padding: 5px;
+            margin: 10px;
+            font-size: 20px;
+            width: 280px;
+            height: 400px;
+            align-content: stretch;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .product_detail {
+            font-size: 15px;
+            text-align: start;
+        }
+
+
+        .product_left {
+            color: rgb(147, 147, 147);
+            font-weight: normal;
+            text-align: start;
+            font-size: 13px;
+        }
+
+        .product_right {
+            font-weight: normal;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .imgheader {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 1px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridcontainer">
+        <div class="item-H ">
+            <div class="imgheader"> <img src="images/header.JPG" alt="header"
+                    style=" position: sticky; width: 100%;height: 190px; border: none;"></div>
+        </div>
+
+        <div class="item-L item">
+            <button class="cssbuttons-io-button">
+                Subscribe
+                <div class="icon" style="color: white;">0
+
+                    <a href="register.html" target="_blank">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+
+                </div>
+            </button>
+        </div>
+
+
+
+        <div class="item-M item">
+            <h2 class="rubik-mono-one-regular"
+                style="background-color: rgb(189, 244, 187); text-align: center;color: #000000">
+                Product list
+            </h2>
+
+            <form action="https://httpbin.org/post" method="POST">
+                <fieldset>
+                    <p style="color: rgb(39, 141, 37);">โปรดเลือกรายการไดโนเสาร์ที่ต้องการ</p><br>
+
+                    <div class="grid">
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/t-rex-removebg-preview.png" alt="T-rex"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>T-rex</h4>
+                            <div class="product_detail">
+                                T-rex
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">127.-</div>
+                                <div class="product_right">
+                                    <label for="T-rex">จำนวน</label>
+                                    <select id="T-Rex" name="T-rex">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/brown-running-t-rex-removebg-preview.png" alt="Brown running T-rex "
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Brown running T-rex</h4>
+                            <div class="product_detail">
+                                Brown running T-rex
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Brown running T-rex">จำนวน</label>
+                                    <select id="Brown running T-rex" name="Brown running T-rex">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/stegosaurus-removebg-preview.png" alt="Stegosaurus"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Stegosaurus</h4>
+                            <div class="product_detail">
+                                Stegosaurus
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">127.-</div>
+                                <div class="product_right">
+                                    <label for="Stegosaurus">จำนวน</label>
+                                    <select id="Stegosaurus" name="Stegosaurus">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/triceratops-removebg-preview.png" alt="Triceratops"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Triceratops</h4>
+                            <div class="product_detail">
+                                Triceratops
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">127.-</div>
+                                <div class="product_right">
+                                    <label for="Triceratops">จำนวน</label>
+                                    <select id="Triceratops" name="Triceratops">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/plesiosaurus-removebg-preview.png" alt="Plesiosaurus"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Plesiosaurus</h4>
+                            <div class="product_detail">
+                                Plesiosaurus
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Plesiosaurus">จำนวน</label>
+                                    <select id="Plesiosaurus" name="Plesiosaurus">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/blue-oviraptor-removebg-preview-2.png" alt="Blue oviraptor"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Blue oviraptor</h4>
+                            <div class="product_detail">
+                                Blue oviraptor
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Blue oviraptor">จำนวน</label>
+                                    <select id="Blue oviraptor" name="Blue oviraptor">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/pteranodon-removebg-preview.png" alt="Pteranodon"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Pteranodon</h4>
+                            <div class="product_detail">
+                                Pteranodon
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Pteranodon">จำนวน</label>
+                                    <select id="Pteranodon" name="Pteranodon">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/dimetrodon-removebg-preview.png" alt="Dimetrodon"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Dimetrodon</h4>
+                            <div class="product_detail">
+                                Dimetrodon
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Dimetrodon">จำนวน</label>
+                                    <select id="Dimetrodon" name="Dimetrodon">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/iguanodon-removebg-preview.png" alt="Iguanodon"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Iguanodon</h4>
+                            <div class="product_detail">
+                                Iguanodon
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Iguanodon">จำนวน</label>
+                                    <select id="Iguanodon" name="Iguanodon">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="grid">
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/polacanthus-removebg-preview.png" alt="Polacanthus"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Polacanthus</h4>
+                            <div class="product_detail">
+                                Polacanthus
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Polacanthus">จำนวน</label>
+                                    <select id="Polacanthus" name="Polacanthus">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/ankylosaurus-removebg-preview.png" alt="Ankylosaurus"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Ankylosaurus</h4>
+                            <div class="product_detail">
+                                Ankylosaurus
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Ankylosaurus">จำนวน</label>
+                                    <select id="Ankylosaurus" name="Ankylosaurus">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/quetzalcoaltus-removebg-preview.png" alt="Quetzalcoaltus"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Quetzalcoaltus</h4>
+                            <div class=" product_detail">
+                                Quetzalcoaltus
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Quetzalcoaltus">จำนวน</label>
+                                    <select id="Quetzalcoaltus" name="Quetzalcoaltus">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="grid">
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/archaeopteryx-removebg-preview.png" alt="Archeopteryx"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Archeopteryx</h4>
+                            <div class="product_detail">
+                                Archeopteryx
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Archeopteryx">จำนวน</label>
+                                    <select id="Archeopteryx" name="Archeopteryx">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/kaprosuchus-removebg-preview.png" alt="Kaprosuchus"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Kaprosuchus</h4>
+                            <div class="product_detail">
+                                Kaprosuchus
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Kaprosuchus">จำนวน</label>
+                                    <select id="Kaprosuchus" name="Kaprosuchus">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/tylosaurus-removebg-preview.png" alt="Tylosaurus"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Tylosaurus</h4>
+                            <div class="product_detail">
+                                Tylosaurus
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Tylosaurus">จำนวน</label>
+                                    <select id="Tylosaurus" name="Tylosaurus">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/gorgosaurus-removebg-preview.png" alt="Gorgosaurus"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Gorgosaurus</h4>
+                            <div class="product_detail">
+                                Gorgosaurus
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Gorgosaurus">จำนวน</label>
+                                    <select id="Gorgosaurus" name="Gorgosaurus">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/pentaceratops-removebg-preview.png" alt="Pentaceratops"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Pentaceratops</h4>
+                            <div class="product_detail">
+                                Pentaceratops
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Pentaceratops">จำนวน</label>
+                                    <select id="Pentaceratops" name="Pentaceratops">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_item">
+                            <div class="product_img">
+                                <img src="images/allosaurus-removebg-preview.png" alt="Allosaurus"
+                                    style="align-items: center; width: 250px;height: 250px;">
+                            </div>
+                            <h4>Allosaurus</h4>
+                            <div class="product_detail">
+                                Allosaurus
+                            </div>
+                            <div class="product_price">
+                                <div class="product_left">120.-</div>
+                                <div class="product_right">
+                                    <label for="Allosaurus">จำนวน</label>
+                                    <select id="Allosaurus" name="Allosaurus">
+                                        <option value="0">0</option>
+                                        <option value="0">1</option>
+                                        <option value="0">2</option>
+                                        <option value="0">3</option>
+                                        <option value="0">4</option>
+                                        <option value="0">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <input type="submit" value="submit">
+
+
+                </fieldset>
+            </form>
+
+
+        </div>
+
+
+        <div class="item-F item">
+            <footer>
+                <address class="kanit-regular">
+                    61/9-10 Building A,Moo 4, Khlong Nueng, Khlong Luang district, Pathum Thani province 12120
+                    <br>
+                    Tel: 098-418-9506 <br>
+                    <br>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
